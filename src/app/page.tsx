@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 // not this
 export default function Home() {
-  // CREATE A MERGE CONFLICT
+  // commit this
   return (
     <div className="bg-black bg-home-img bg-cover bg-center">
       <main className="flex flex-col justify-center text-center max-w-5xl mx-auto h-dvh">
