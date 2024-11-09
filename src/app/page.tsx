@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-// not this
 export default function Home() {
   // commit this
   return (
