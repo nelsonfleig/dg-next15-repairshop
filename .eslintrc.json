@@ -3,7 +3,6 @@
   "plugins": ["unused-imports"],
   "rules": {
     "prefer-const": "error",
-    "no-console": "warn" 
     "unused-imports/no-unused-imports": "warn"
   }
 }
