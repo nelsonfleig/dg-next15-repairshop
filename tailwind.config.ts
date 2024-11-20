@@ -1,16 +1,16 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: ['class'],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'home-img': "url('/images/home-img.jpg')",
+        'home-img': "url('/images/home-img.jpg')"
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -58,9 +58,31 @@ const config: Config = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
+      },
+      keyframes: {
+        appear: {
+          from: {
+            opacity: '0'
+          },
+          to: {
+            opacity: '1'
+          }
+        },
+        slide: {
+          from: {
+            transform: 'translateX(100%)'
+          },
+          to: {
+            transform: 'translateX(0%)'
+          }
+        }
+      },
+      animation: {
+        appear: 'appear 1s ease-in-out',
+        slide: 'slide 750ms ease-in-out'
       }
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require('tailwindcss-animate')]
 };
 export default config;
